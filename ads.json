@@ -1,0 +1,19 @@
+export interface Ad {
+  id: string;
+  imageUrl: string;
+  linkUrl: string;
+  alt: string;
+}
+
+let _ads: Ad[] = [];
+
+export let ads: Ad[] = _ads;
+
+export function setAds(next: Ad[]): void {
+  _ads = next;
+  ads = _ads;
+}
+
+export function getLocalAds(): Ad[] {
+  return [];
+}

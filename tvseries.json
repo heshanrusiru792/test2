@@ -1,0 +1,3 @@
+import type { TVItem } from "@/types";
+
+export const TV_DB: TVItem[] = [];
